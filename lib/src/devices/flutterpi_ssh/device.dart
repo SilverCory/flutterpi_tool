@@ -89,6 +89,7 @@ class FlutterpiSshDevice extends Device {
   })  : remoteInstallPath = remoteInstallPath ?? '/tmp/',
         super(
           id,
+          logger: logger,
           category: Category.mobile,
           platformType: PlatformType.custom,
           ephemeral: false,

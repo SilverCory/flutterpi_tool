@@ -43,6 +43,7 @@ class ExtendedEnvironment implements Environment {
         buildDir: buildDir,
         defines: defines,
         inputs: inputs,
+        packageConfigPath: '',
       ),
     );
   }
@@ -109,4 +110,8 @@ class ExtendedEnvironment implements Environment {
   Usage get usage => _delegate.usage;
 
   final MoreOperatingSystemUtils operatingSystemUtils;
+
+  @override
+  // TODO: implement packageConfigPath
+  String get packageConfigPath => throw UnimplementedError();
 }
